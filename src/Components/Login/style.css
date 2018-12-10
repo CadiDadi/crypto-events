@@ -1,0 +1,45 @@
+header {
+    border-bottom: 1px solid #ccc;
+    margin-top: 110px;
+    padding: 30px;
+  }
+button,
+input {
+    background-color: white;
+    color: blue;
+    font-size: 20px;
+    height: 50px;
+}
+::placeholder {
+    color: blue;
+    opacity: 1; /* Firefox */
+    text-align: center;
+}
+form {
+    display: grid;
+    grid-template-columns: auto;
+    margin: 150px auto;
+    padding: 30px;
+    width: 400px;
+    height: 400px;
+    grid-gap: 5px;
+    background-image: url('../../img/stock2.png');
+    /* opacity: 0.8; */
+    color: white;
+    font-size: 36px;
+    /* text-align: center; */
+}
+.response{
+    display: grid;
+    grid-template-columns: auto;
+    margin: 150px auto;
+    padding: 30px;
+    width: 400px;
+    height: 500px;
+    grid-gap: 5px;
+    background-image: url('../../img/stock2.png');
+    color: white;
+    font-size: 36px; 
+    text-align: center;
+    align-content: center;
+}

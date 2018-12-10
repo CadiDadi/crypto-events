@@ -1,44 +1,79 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Assignment
+    https://coursework.vschool.io/personal-react-site/
 
-## Available Scripts
+NOTE:
+    THIS PROJECT IS NOT FULLY FUNCTIONAL, NOR IS IT MEANT TO BE, IT IS A LEARNING PROJECT OF EXPRESS.JS
 
-In the project directory, you can run:
+TO DO:
+    ☑️ proposal - PitchDeck - https://slides.com/cadidadi/crypto-events
+        see WIREFRAME & MINDMAP free platforms below
+    ☑️ install react-router
+    ☑️ install axios
+    ☑️ install react-router-dom
 
-### `npm start`
+    convert dates - https://momentjs.com/ 
+        ☑️ install (can be npm or use URL) - installed NPM
+        ☑️ use in files - alternatives:
+        ☑️ code for conversions - moment().format()
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+API:
+    API - https://api.coinmarketcal.com (see GTasks/VSchool for acct info)
+            *note - requires 'accept'
+    EVENTS API 
+        -do not forget to use can_occur_before field in the response object, this field is very important as some events can occur before the date stated.
+        -can change settings (events/page, dates, etc) and generate new API URL
+        API - needs a KEY called 'accept' (for Postman, et) - (ask Nate about)
+            Curl
+                curl -X GET "https://api.coinmarketcal.com/v1/events?access_token=YTY5YzYwNGE3YTk4NmI3YmUzMzMyMDFlOGRlY2MyZWNjNTU4OTAyYTZiZWRjNTk1YTM4MzVlN2ZkYzM5MGQ0NA&page=1&max=50" -H "accept: application/json"
+            *use this - Request URL
+                https://api.coinmarketcal.com/v1/events?access_token=YTY5YzYwNGE3YTk4NmI3YmUzMzMyMDFlOGRlY2MyZWNjNTU4OTAyYTZiZWRjNTk1YTM4MzVlN2ZkYzM5MGQ0NA&page=1&max=50
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+-------------
 
-### `npm run build`
+Personal React Site
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+18 AUGUST 2015 on Web Applications, HTTP/API, Level 2, Project
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+You are going to design and build your very own React site with a theme and content of your choosing.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+This site will be a portfolio piece.
 
-### `npm run eject`
+Project Requirements
+Your site must integrate with an online API. Use the axios library to make client-side HTTP requests.
+Here is a huge list of open APIs you can use. Some fun ones include:
+Open Movie Database API
+Rotten Tomatoes API
+Weather Forecast API
+Edmunds Vehicle API
+Mashape API Library
+Programmable Web API Library
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Your site must have at least 3 views (pages) using React Router.
+Use Context, render-props, and Higher Order Components (HOCs) where needed to help with writing DRY ('Don't Repeat Yourself') code.
+Remember to use lifecycle methods like componentDidMount for managing HTTP requests.
+Your site must be responsive. Can use any method to accomplish this you want.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+One of the big challenges in accessing APIs is getting around the browser's "Same Origin Policy". Many of the APIs above require you to make requests from a server instead of the client. V School has built a small, simple request forwarder to help make this process easier. It may not work in all cases, and should only be used if you know your API of choice doesn't allow frontend requests.
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+* API Request Forwarding / CORS:
+** may need V School's server/request forwarder - https://coursework.vschool.io/v-school-request-forwarding-cors-documentation/
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Proposal
+You must submit a proposal and have it passed by an instructor. This proposal is meant to help focus and scale your idea into a realistic MVP, or minimum viable product, within a reasonable time frame.
 
-## Learn More
+Your proposal must contain the following:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Paragraph describing your app idea. What are you building? Who is it for?
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+An easily describable MVP (minimum viable product). Remember you have a limited amount of time to develop this project. What is the minimum you can get done on this project to meet the requirements and get a product in someone's hand?
+
+User Stories. What is a user going to do when they go to your site from the time they hit the landing page? What features do they need and which are optional? - https://www.mountaingoatsoftware.com/agile/user-stories
+
+Wireframe. What is each page going to look like? What will be the layout, color scheme, etc? Check out wireframe.cc for a simple and free wireframing tool - https://wireframe.cc/
+
+Mind Map - https://www.mindmup.com/ - What is the folder structure of your frontend app going to look like? Make a diagram representing its component hierarchy.
+
+Once you have these items, you need to meet with your instructor to pass off your proposal before you can start coding.
+
