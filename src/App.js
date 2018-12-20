@@ -4,8 +4,9 @@ import Navbar from './Components/Navbar'
 import Header from './Components/Header'
 import EventList from './Components/Events/EventList'
 import Contact from './Components/Contact/Contact'
+import Login from './Components/Login/Login'
 import primary from './img/primary.png'
-import Login from './Components/Login/Login';
+
 
 class App extends Component {
     constructor(){
